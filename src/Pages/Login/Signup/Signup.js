@@ -1,6 +1,7 @@
 import React from 'react';
 import banner from '../../../assets/banner.png'
 import logo from '../../../assets/logo.png'
+import Form from './Form';
 
 const Signup = () => {
     return (
@@ -15,6 +16,7 @@ const Signup = () => {
         </div>
         </div>
 
+        <Form/>
 
     </div>
     );

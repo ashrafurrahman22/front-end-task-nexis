@@ -15,7 +15,7 @@ const LoginForm = () => {
 
   const hanldeReview = (event) => {
     console.log(event);
-    fetch("https://safe-lake-95138.herokuapp.com/review", {
+    fetch("https://test.nexisltd.com/login", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -24,7 +24,7 @@ const LoginForm = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        toast.success("You Successfully added your review");
+        toast.success("You Successfully logged in");
         console.log(data);
         reset();
       });
